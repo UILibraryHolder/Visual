@@ -1418,7 +1418,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
         end
         GameNameObj.Text = NewText..'...'
     end
-
+--[[
     HubNameObj.InputBegan:Connect(function(Input)
         if Input.UserInputType == Enum.UserInputType.MouseButton1 then
             Library:CreatePrompt('Text', 'Hub Name', HubName, 'Close')
@@ -1430,7 +1430,7 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
             Library:CreatePrompt('Text', 'Game Name', GameName, 'Close')
         end
     end)
-
+]]
     function UpdateTabButtonHolderSize()
         local ContentSize = TabButtonHolderListLayout.AbsoluteContentSize.Y
 
